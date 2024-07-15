@@ -16,6 +16,12 @@ public class Day_1 {
         int e=d+x;
         System.out.println(e);
 
+        // void abc;
+
+
+        final int q=1;
+        q=9;
+
 
     }
 }
