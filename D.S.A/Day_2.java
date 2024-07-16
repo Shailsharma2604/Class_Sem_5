@@ -38,6 +38,6 @@ public class Day_2 {
         int x=b+c+d;  // 10+(-5)+(-3)
         System.out.println(x);
 
-
+        
     }
 }
