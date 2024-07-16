@@ -6,3 +6,36 @@ Bitwise operators :-
 
 
 ~ 5 = -6
+
+2's complement of 5 is -6
+
+0101 -> 1010
+1010 -> 101
+101 -> 5
+
+-6 = 1010
+1010 -> 0101
+
+Left shift (2<<3):- 
+                    2x2^3 = 16
+
+
+right shift (2>>3):-
+                    2/2^3 = 0
+            (9>>3) = 1
+
+
+deep copy and shallow copy
+
+deep copy:- 
+            It is a process in which the copying process occurs recursively.
+            It means first constructing a new collection object and then, 
+            recursively populating it with copies of the child objects found in the original.
+            In case of deep copy, a copy of object is copied in other object.
+
+shallow copy:-
+                A shallow copy of an object is a copy of the object itself, but not of the objects to which it refers.
+                If the original object contains references to other objects, the shallow copy will copy these references into the new object.
+                Both the original and the copied object will refer to the same instances of those referenced objects.
+                Changes made to the referenced objects through one object will reflect in the other.
+
