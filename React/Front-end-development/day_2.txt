@@ -1,8 +1,137 @@
+- Network Protocols:
+    - HTTP
+    - HTTPS
+    - FTP
+    - SMTP
+    - POP3
+    - IMAP
+    - Telnet
+    - SSH
+    - DNS
+    - DHCP
+    - ARP
+    - ICMP
+    - SNMP
+    - BGP
+    - OSPF
+    - RIP
+    - EIGRP
+    - IP
+    - TCP
+    - UDP
+    - ICMP
+    - IPv4
+    - IPv6
+    - MAC
+    - Ethernet
+    - Token Ring
+    - FDDI
+    - ATM
+    - Frame Relay
+    - ISDN
+    - DSL
+    - Cable Modem
+    - Satellite
+    - Wireless
+    - Bluetooth
+    - Wi-Fi
+    - WiMAX
+    - LTE
+    - 5G
+    - PAN
+    - LAN
+    - WAN
+    - DHCP
+    - TCP/IP
+    - OSI Model
+- Http vs Https
+- Encryption and Decryption
+- How Internet works
+- Total Ports: 65535
+- DNS
+- ISP 
+- Router
+- Network
+- Public vs Private IP 
+- Data Integrity: Data is not tampered
+- Data Consistency: Data is same
+- Data Confidentiality: Data is not readable
+- Data Availability: Data is available
+- Data Security: Data is secure
+- 2 tier, 3 tier, N tier architecture
+- Public and Provate IP range:
+PUBLIC RANGE
+    - Class A: 0 - 127 ; 127 is reserved for loopback ; loopback is used to check if the network card is working or not by pinging
+    - Class B: 128 - 191
+    - Class C: 192 - 223
+    - Class D: 224 - 239
+    - Class E: 240 - 255
+
+    Total range = 255
+PRIVATE RANGE
+    - Class A: 10.0.0.0 - 10.255.255.255
+    - Class B: 172.16.0.0 - 172.31.255.255
+    - Class C: 192.168.0.0 - 192.168.255.255
 
 
 
-An IPv6 address is 128 bits long.
-An IPv6 address is represented as eight groups of four hexadecimal digits, each group is separated by a colon.
-TCP/IP stands for Transmission Control Protocol/Internet Protocol.
+HTML----------------------
 
-total ports 65535 
+- Types of structures:
+    1. Symentic Structure: 
+        - Header
+        - Nav
+        - Main
+        - Section
+        - Article
+        - Aside
+        - Footer
+    2. Formative Structure:
+        - Div
+        - Span
+        - Table
+        - Form
+        - Input
+        - Button
+        - Select
+        - Option
+        - Textarea
+        - Label
+        - Fieldset
+        - Legend
+        - Optgroup
+        - Datalist
+        - Output
+        - Progress
+        - Meter
+        - Details
+        - Summary
+        - Iframe
+        - Audio
+        - Video
+        - Canvas
+        - Svg
+        - Math
+        - Script
+        - Noscript
+        - Template
+        - Slot
+        - A
+        - Img
+        - Map
+        - Area
+        - Link
+        - Script
+        - Style
+        - Meta
+        - Title
+        - Base
+        - Head
+        - Body
+        - Html
+    3. Interactive Structure:
+        - Button
+        - Details
+        - Summary
+        - Dialog
+        - Menu
