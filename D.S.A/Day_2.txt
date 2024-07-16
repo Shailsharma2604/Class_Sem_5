@@ -39,3 +39,5 @@ shallow copy:-
                 Both the original and the copied object will refer to the same instances of those referenced objects.
                 Changes made to the referenced objects through one object will reflect in the other.
 
+
+=,==,equals() in java

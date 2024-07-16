@@ -15,5 +15,29 @@ public class Day_2 {
         int number_2 = -6;
         int twoComplement_2 = ~number_2;
         System.out.println("2's complement of -6 is: " + twoComplement_2);
+
+
+        String ABC = "Hello";
+        String TBR = ABC;
+        String PQR = new String("Hello");
+        System.out.println(ABC==TBR);
+        System.out.println(ABC.equals(PQR));
+        System.out.println(ABC==PQR);
+        System.out.println(ABC.equals(PQR));
+
+
+        ABC = "world";
+        System.out.println(TBR);
+        System.out.println(ABC==TBR);
+
+
+        int a=-5;
+        int b=10;
+        int c=a++;
+        int d=++a;
+        int x=b+c+d;  // 10+(-5)+(-3)
+        System.out.println(x);
+
+
     }
 }
