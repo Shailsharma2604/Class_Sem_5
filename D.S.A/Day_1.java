@@ -17,8 +17,7 @@ public class Day_1 {
         System.out.println(e);
 
         // void abc;
-
-
+        
         final int q=1;
         q=9;
 
