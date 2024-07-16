@@ -1,0 +1,75 @@
+- Java Editions:
+    1. Standard Edition : Used by us 
+    2. Micro Edition : Not used now 
+    3. Smart card Edition
+    4. Enterprise Edition : Used by web distributed apps 
+
+- Text block: 
+    - Introduced in Java 13
+    - Used to write multiline strings
+    - Uses """ to start and end the block
+    - Can be used to write HTML, JSON, SQL queries etc.
+
+- Java is divided into dev part and execution part
+    - Dev part is done by JDK
+    - Execution part is done by JRE
+
+# Is loader and linker same as compiler
+- Loader and linker are not same as compiler
+- Compiler is used to convert source code to machine code
+- Loader is used to load the machine code into memory
+- Linker is used to link the machine code with other required libraries
+
+# Primitive data types:
+- byte: 1 byte
+- short: 2 bytes
+- int: 4 bytes
+- long: 8 bytes
+- float: 4 bytes
+- double: 8 bytes
+- char: 2 bytes             // 2 because of utf-16 (Unicode Transfer Format) encoding ; Java allows us to write variable name in any lang and hence we need more size, so utf-16
+- boolean: 1 bit
+
+# Non primitive data types:
+- String                // null by default
+- Array
+- Class
+- Interface
+- Enum
+
+- Whenever an obj is not used in java, it undergoes garbage collection
+- Garbage collection is done by JVM
+
+- int a;            // Java will not assign any default value to a because it performs garbage collection for this as it is not initialized or used 
+
+- calling a static method or static variable do not requires a object 
+
+- Declaring constant:
+    - final int a = 10;        // final keyword is used to declare a constant
+    - a = 20;                  // This will give an error as a is a constant
+
+- Variable storage in Java: 
+    - Stack: 
+        - Stores method calls and local variables
+        - Stores primitive datatypes
+        - Faster access
+        - Limited memory
+    - Heap:
+        - Stores objects and global variables
+        - Stores non-primitive datatypes
+        - Slower access
+        - Large memory
+
+- Memories:
+    - Primary memory 
+    - Secondary memory
+    - Cache memory
+
+- Types of Cache:
+    - L1 cache: Fastest, smallest
+    - L2 cache: Slower, larger
+    - L3 cache: Slowest, largest
+
+- Cache is fastest because it is present in the CPU
+
+- Resistors are used to store data in the form of 0 and 1. They are extremely fast because memory storage location is fixed and hence we can access it quickly.
