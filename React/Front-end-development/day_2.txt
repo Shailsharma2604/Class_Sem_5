@@ -5,4 +5,4 @@ An IPv6 address is 128 bits long.
 An IPv6 address is represented as eight groups of four hexadecimal digits, each group is separated by a colon.
 TCP/IP stands for Transmission Control Protocol/Internet Protocol.
 
-
+total ports 65535 
