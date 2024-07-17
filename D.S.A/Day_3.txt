@@ -1,0 +1,17 @@
+What is String,StringBuilder, and StringBuffer:-
+    
+    String:-
+            Immutable:-
+                    Once we create a String object, we can't perform any changes in the existing object.
+                    If we are trying to perform any changes with those changes, a new object will be created. 
+                    So, String objects are immutable objects.
+    StringBuilder:-
+            Mutable:-
+                    Once we create a StringBuilder object, we can perform any changes in the existing object.
+                    So, StringBuilder objects are mutable objects.
+    StringBuffer:-
+            Mutable:-
+                    Once we create a StringBuffer object, we can perform any changes in the existing object.
+                    So, StringBuffer objects are mutable objects.
+            Thread-safe:-
+                    StringBuffer is thread-safe. So, StringBuffer objects are thread-safe objects.       
