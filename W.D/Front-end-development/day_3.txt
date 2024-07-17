@@ -1,0 +1,8 @@
+
+number,Boolean,String,NaN
+
+typeof
+
+let num = 1;
+
+c=
