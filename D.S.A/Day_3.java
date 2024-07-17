@@ -38,8 +38,6 @@ public class Day_3 {
     // System.out.println(s3.equals(s1));
 
     System.out.println(String.format("%d", 1));
-
-        
     
     }
     // public static void main(String args) {
