@@ -1,0 +1,46 @@
+why can we access var variable before initillizatio?
+bcz when program is excuted the memory for var type variable is created in global scope and assigned value as undefined.
+and in case execution phase it is undefined.
+-
+**Q: What is the difference between var, let and const?**
+    A: var is function scoped, let and const are block scoped.
+arrow function
+- 
+*Q: What is an arrow function?*
+An arrow function is a concise way to write a function in JavaScript. It is defined using the  => operator, and
+it does not have its own this context. Arrow functions are often used as event handlers or    
+as concise alternatives to traditional function expressions. 
+
+*Q: How do you define an arrow function?*
+An arrow function is defined using the => operator. For example:
+
+```javascript
+const add = (a, b) => {
+    return a + b;
+};
+```
+
+*Q: What are the benefits of using arrow functions?*
+The benefits of using arrow functions include: 
+*   Conciseness: Arrow functions are often shorter than traditional function expressions.
+*   Readability: Arrow functions can make code more readable by reducing the amount of boilerplate code
+*   Immutability: Arrow functions do not have their own this context, which can
+make code more predictable and easier to reason about.
+
+
+**Q: How do arrow functions handle this?**
+Arrow functions do not have their own this context. Instead, they inherit the `this`
+value from the surrounding lexical scope. This can be useful in situations where you want to
+preserve the value of this from an outer function or object.
+
+**Q: When should you use an arrow function?**
+You should use an arrow function when you want a concise way to define a function and you do not need
+to access the this value of the function. Arrow functions are often used as event handlers or as
+concise alternatives to traditional function expressions.
+
+**Q: What is the difference between an arrow function and a regular function?**
+The main difference between an arrow function and a regular function is how they handle the this value.
+Arrow functions do not have their own this context and instead inherit the this value from the surrounding lexical scope.
+Regular functions have their own this context, which can be useful in certain situations where you need to access the this value of the function.
+
+
