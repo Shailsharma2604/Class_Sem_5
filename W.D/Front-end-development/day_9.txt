@@ -29,6 +29,7 @@ make code more predictable and easier to reason about.
 
 
 **Q: How do arrow functions handle this?**
++3
 Arrow functions do not have their own this context. Instead, they inherit the `this`
 value from the surrounding lexical scope. This can be useful in situations where you want to
 preserve the value of this from an outer function or object.
@@ -43,4 +44,6 @@ The main difference between an arrow function and a regular function is how they
 Arrow functions do not have their own this context and instead inherit the this value from the surrounding lexical scope.
 Regular functions have their own this context, which can be useful in certain situations where you need to access the this value of the function.
 
+**Q: Can you use an arrow function as a constructor?**
+No, you cannot use an arrow function as a constructor. Arrow functions do not have a prototype property and cannot be used with the new keyword to create instances of objects.
 
