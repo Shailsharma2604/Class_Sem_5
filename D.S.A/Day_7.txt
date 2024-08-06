@@ -1,0 +1,240 @@
+- Java Editions:
+    1. Standard Edition : Used by us 
+    2. Micro Edition : Not used now 
+    3. Smart card Edition
+    4. Enterprise Edition : Used by web distributed apps 
+
+- Text block: 
+    - Introduced in Java 13
+    - Used to write multiline strings
+    - Uses """ to start and end the block
+    - Can be used to write HTML, JSON, SQL queries etc.
+
+- Java is divided into dev part and execution part
+    - Dev part is done by JDK
+    - Execution part is done by JRE
+
+# Is loader and linker same as compiler
+- Loader and linker are not same as compiler
+- Compiler is used to convert source code to machine code
+- Loader is used to load the machine code into memory
+- Linker is used to link the machine code with other required libraries
+
+# Primitive data types:
+- byte: 1 byte
+- short: 2 bytes
+- int: 4 bytes
+- long: 8 bytes
+- float: 4 bytes
+- double: 8 bytes
+- char: 2 bytes             // 2 because of utf-16 (Unicode Transfer Format) encoding ; Java allows us to write variable name in any lang and hence we need more size, so utf-16
+- boolean: 1 bit
+
+# Non primitive data types:
+- String                // null by default
+- Array
+- Class
+- Interface
+- Enum
+
+- Whenever an obj is not used in java, it undergoes garbage collection
+- Garbage collection is done by JVM
+
+- int a;            // Java will not assign any default value to a because it performs garbage collection for this as it is not initialized or used 
+
+- calling a static method or static variable do not requires a object 
+
+- Declaring constant:
+    - final int a = 10;        // final keyword is used to declare a constant
+    - a = 20;                  // This will give an error as a is a constant
+
+- Variable storage in Java: 
+    - Stack: 
+        - Stores method calls and local variables
+        - Stores primitive datatypes
+        - Faster access
+        - Limited memory
+    - Heap:
+        - Stores objects and global variables
+        - Stores non-primitive datatypes
+        - Slower access
+        - Large memory
+
+- Memories:
+    - Primary memory 
+    - Secondary memory
+    - Cache memory
+
+- Types of Cache:
+    - L1 cache: Fastest, smallest
+    - L2 cache: Slower, larger
+    - L3 cache: Slowest, largest
+
+- Cache is fastest because it is present in the CPU
+
+- Resistors are used to store data in the form of 0 and 1. They are extremely fast because memory storage location is fixed and hence we can access it quickly.
+
+- String vs String Builder vs String Buffer
+    - String buffer is thread safe or synchronized
+    - Strings created via string buffer and Builder are mutable
+    - String buffer is slower than string builder
+    - String builder is faster than string buffer
+    - String buffer vs String builder:
+        - String buffer is synchronized
+        - String builder is not synchronized (There is simultaneous access to the string builder)
+
+- Exception Propagation : Flow of exception from one method to another
+    - If an exception occurs in a method, it is thrown to the calling method
+    - If the calling method does not handle the exception, it is thrown to the JVM
+    - If JVM does not handle the exception, the program is terminated
+    
+
+
+ASYMPTOTIC NOTATIONS (Independent of machine config)
+
+=> Big O : (UPPER BOUND) (WORST CASE)
+
+            0 <= f(x) <= c.g(x) for all x >= k      // n is the input size ; f(x) is the time taken by the algo ; g(x) is the time taken by the worst case algo ; c is a constant ; k is a constant
+
+            - After a certain value of x, f(x) will always be less than or equal to c.g(x)
+
+=> Big Omega : (LOWER BOUND) (BEST CASE)
+
+            0 <= c.g(x) <= f(x) for all x >= k      // n is the input size ; f(x) is the time taken by the algo ; g(x) is the time taken by the best case algo ; c is a constant ; k is a constant
+
+            - After a certain value of x, f(x) will always be greater than or equal to c.g(x)
+
+=> Big Theta : (TIGHT BOUND) (AVERAGE CASE)
+
+            0 <= c1.g(x) <= f(x) <= c2.g(x) for all x >= k      // n is the input size ; f(x) is the time taken by the algo ; g(x) is the time taken by the best case algo ; c1 and c2 are constants ; k is a constant
+
+            - After a certain value of x, f(x) will always be greater than or equal to c1.g(x) and less than or equal to c2.g(x)
+
+
+- Big O is extensively used because the lower bound is much more difficult to find than the upper bound in most cases
+
+
+=> Small o : (UPPER BOUND) (WORST CASE)
+
+            0 <= f(x) < c.g(x) for all x >= k      // n is the input size ; f(x) is the time taken by the algo ; g(x) is the time taken by the worst case algo ; c is a constant ; k is a constant
+
+            - After a certain value of x, f(x) will always be less than c.g(x)
+
+=> Small Omega : (LOWER BOUND) (BEST CASE)
+    
+                0 <= c.g(x) < f(x) for all x >= k      // n is the input size ; f(x) is the time taken by the algo ; g(x) is the time taken by the best case algo ; c is a constant ; k is a constant
+    
+                - After a certain value of x, f(x) will always be greater than c.g(x)
+
+- Sorting algos:
+
+1. Bubble sort:
+    - Time complexity:
+        - Best case: O(n)
+        - Worst case: O(n^2)
+        - Average case: O(n^2)
+    - Space complexity: O(1)
+    - Stable: Yes
+    - In place: Yes
+
+    -> In bubble sort, we compare adjacent elements and swap them if they are in the wrong order. This process is repeated until the array is sorted.
+
+    ex: 5 3 8 6 7 2
+        3 5 6 7 2 8
+        3 5 6 2 7 8
+        3 5 2 6 7 8
+        3 2 5 6 7 8
+        2 3 5 6 7 8
+
+        -> Here, 2 is compared with 3 and swapped. Then 3 is compared with 5 and swapped. This process is repeated until the array is sorted.
+
+2. Selection sort:  
+    - Time complexity:
+        - Best case: O(n^2)
+        - Worst case: O(n^2)
+        - Average case: O(n^2)
+    - Space complexity: O(1)
+    - Stable: No
+    - In place: Yes
+
+    -> In selection sort, we select the minimum element from the unsorted portion of the array and swap it with the first element of the unsorted portion. This process is repeated until the array is sorted.
+
+    ex: 5 3 8 6 7 2
+        2 3 8 6 7 5
+        2 3 8 6 7 5
+        2 3 5 6 7 8
+        2 3 5 6 7 8
+        2 3 5 6 7 8
+
+        -> Here, 2 is the minimum element and is swapped with 5. Then 3 is the minimum element and is swapped with 3. This process is repeated until the array is sorted.
+
+3. Insertion sort:
+    - Time complexity:
+        - Best case: O(n)
+        - Worst case: O(n^2)
+        - Average case: O(n^2)
+    - Space complexity: O(1)
+    - Stable: Yes
+    - In place: Yes
+
+    -> In insertion sort, we divide the array into two parts: sorted and unsorted. We pick an element from the unsorted part and insert it into its correct position in the sorted part. This process is repeated until the array is sorted.
+
+    ex: 5 3 8 6 7 2
+        3 5 8 6 7 2
+        3 5 6 8 7 2
+        3 5 6 7 8 2
+        2 3 5 6 7 8
+
+        -> Here, 3 is compared with 5 and swapped. Then 5 is compared with 8 and swapped. This process is repeated until the array is sorted.
+
+4. Merge sort:
+    - Time complexity:
+        - Best case: O(n log n)
+        - Worst case: O(n log n)
+        - Average case: O(n log n)
+    - Space complexity: O(n)
+    - Stable: Yes
+    - In place: No         // Because we need extra space to store the sorted array
+
+    -> In merge sort, we divide the array into two halves, sort each half, and then merge the sorted halves. This process is repeated until the array is sorted.
+
+5. Quick sort:
+    - Time complexity:
+        - Best case: O(n log n)
+        - Worst case: O(n^2)
+        - Average case: O(n log n)
+    - Space complexity: O(log n)
+    - Stable: No
+    - In place: Yes
+
+    -> In quick sort, we select a pivot element and partition the array such that all elements less than the pivot are on the left and all elements greater than the pivot are on the right. We then recursively sort the left and right subarrays.
+
+    ex: 5 3 8 6 7 2
+        2 3 5 6 7 8
+
+        -> Here, 5 is the pivot element. 3, 2 are less than 5 and 8, 6, 7 are greater than 5. This process is repeated until the array is sorted.
+
+
+---------------
+
+- Recursive function:
+    - A function that calls itself
+    - Base condition is required to avoid infinite recursion
+
+- Base for calculating the time complexity of a recursive function:
+    - Recurrence relation
+
+- Tail recursion:
+    - A recursive function is said to be tail recursive if the recursive call is the last thing executed by the function
+    - Tail recursive functions can be optimized by the compiler to avoid stack overflow
+
+- Recurrence relation:
+    - A relation that expresses the value of a function in terms of its value at smaller inputs
+    - Types:
+        1. Linear recurrence relation
+        2. Tail recursive relation
+
+- Akra Bazzi method is used to solve the recurrence relation
+
+
++
