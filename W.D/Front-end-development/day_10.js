@@ -42,12 +42,32 @@
 //     console.log(a);
 // }
 
-var a=100;
+// var a=100;
 
-function x (){
-    var a=200;
-    console.log(a);
+// function x (){
+//     var a=200;
+//     console.log(a);
+// }
+
+// x();
+// console.log(a);
+
+
+
+// function fun1(){
+//     let a=100;
+//     return function fun2(){
+//         console.log(a);
+//     }
+    
+// }
+// fun1()();
+
+function fun1(){
+    function fun2(){
+        console.log("fun2");
+    }
+    return fun2;
 }
 
-x();
-console.log(a);
+console.log(fun1()());
