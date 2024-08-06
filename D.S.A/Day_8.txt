@@ -82,3 +82,9 @@ Master Theorem
 T(n) = aT(n/b) + f(n)
 
 link :- https://www.geeksforgeeks.org/master-theorem-for-divide-and-conquer-recurrences/
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
