@@ -1,0 +1,4 @@
+call back :- 
+            A callback in JavaScript is a function that is passed as an argument to another function and is executed after some operation has been completed.
+            Callbacks are often used for asynchronous operations like handling events, making API calls, or reading files.
+
