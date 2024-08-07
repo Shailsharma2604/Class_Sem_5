@@ -28,3 +28,26 @@
 
 
 
+// setTimeout(function(){                    //callback function
+//     console.log("hello");
+// }, 2000);
+// setTimeout(function(){                    //callback function
+//     console.log("1");
+// }, 3000);
+// setTimeout(function(){                    //callback function
+//     console.log("2");
+// }, 4000);
+// setTimeout(function(){                    //callback function
+//     console.log("3");
+// }, 5000);
+// setTimeout(function(){                    //callback function
+//     console.log("world");
+// }, 6000);
+
+
+
+const file = "day_11.txt";
+
+compressFile(fileName);
+
+encryptFile(compressFile);

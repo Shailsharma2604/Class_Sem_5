@@ -2,3 +2,18 @@ call back :-
             A callback in JavaScript is a function that is passed as an argument to another function and is executed after some operation has been completed.
             Callbacks are often used for asynchronous operations like handling events, making API calls, or reading files.
 
+
+
+setTimeout :- 
+            The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+            The function is only executed once. If you need to repeat execution, use the setInterval() method.
+            The setTimeout() method returns an ID which can be used by the clearTimeout() method to cancel the timeout.
+
+
+const file = "day_11.txt";
+
+compressFile(fileName);
+
+encryptFile(compressFile);
+
+
