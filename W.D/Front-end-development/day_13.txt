@@ -18,4 +18,20 @@ prototype inheritance : -
 
                         -> Inheritance is a mechanism in which one class acquires the properties and behaviors of another class.
                         -> Inheritance is a mechanism in which a new class is created from an existing class.
-                        
+
+
+
+
+Array.__proto__ : -
+                    -> The Array.__proto__ property is an inbuilt property in JavaScript which is used to set the prototype of the Array constructor to another object.
+
+
+
+Array.__proto__==Array.prototype : -
+                                    -> The Array.__proto__ property is an inbuilt property in JavaScript which is used to set the prototype of the Array constructor to another object.
+
+
+
+Array.prototype : -
+                    -> The Array.prototype property represents the prototype for the Array constructor and allows you to add new properties and methods to all Array objects.
+
