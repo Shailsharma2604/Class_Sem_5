@@ -1,0 +1,21 @@
+asynchronous function data() {
+    setTimeout(() => {
+        console.log("Data is being fetched");
+    }, 2000);
+}
+
+
+
+
+prototype inheritance : -  
+                        -> Inheritance is a mechanism in which one class acquires the property of another class.
+                        -> Inheritance is a mechanism in which a new class is created from an existing class.
+                        -> Inheritance is a mechanism in which a class inherits the properties and behaviors of another class.
+                        -> Inheritance is a mechanism in which a class acquires the properties and behaviors of another class.
+                        -> Inheritance is a mechanism in which a class is created from an existing class.
+                        -> Inheritance is a mechanism in which a class inherits the properties of another class.
+                        -> Inheritance is a mechanism in which a class acquires the properties of another class.
+
+                        -> Inheritance is a mechanism in which one class acquires the properties and behaviors of another class.
+                        -> Inheritance is a mechanism in which a new class is created from an existing class.
+                        
