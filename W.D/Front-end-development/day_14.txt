@@ -1,0 +1,35 @@
+
+
+
+what is virtual DOM :- 
+                    -> A virtual DOM object is a representation of a DOM object, like a lightweight copy.
+                    -> A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.
+                    -> Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen.
+                    -> When you change something in the virtual DOM, you're not actually changing the real DOM. Instead, you're changing a virtual representation of the DOM.
+                    -> React uses the virtual DOM to find out what has changed in the real DOM, and that's what makes React so fast.
+
+
+
+what is shadow DOM :-
+                    -> The Shadow DOM is a web standard that offers component style and markup encapsulation.
+                    -> It is a critically important piece of the Web Components story as it ensures that a component will work in any environment even if other CSS or JavaScript is at play on the page.
+                    -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+                    -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+                    -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+
+
+
+what is the difference between shadow DOM and virtual DOM :-
+                                                            -> The Shadow DOM is a web standard that offers component style and markup encapsulation.
+                                                            -> It is a critically important piece of the Web Components story as it ensures that a component will work in any environment even if other CSS or JavaScript is at play on the page.
+                                                            -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+                                                            -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+                                                            -> The Shadow DOM is a way to create self-contained components that can be reused in a web page without worrying that CSS styles from the main page will interfere with styles in the component.
+                                                            -> A virtual DOM object is a representation of a DOM object, like a lightweight copy.
+                                                            -> A virtual DOM object has the same properties as a real DOM object, but it lacks the real thing's power to directly change what's on the screen.
+                                                            -> Manipulating the DOM is slow. Manipulating the virtual DOM is much faster, because nothing gets drawn onscreen.
+                                                            -> When you change something in the virtual DOM, you're not actually changing the real DOM. Instead, you're changing a virtual representation of the DOM.
+                                                            -> React uses the virtual DOM to find out what has changed in the real DOM, and that's what makes React so fast.
+
+
+
