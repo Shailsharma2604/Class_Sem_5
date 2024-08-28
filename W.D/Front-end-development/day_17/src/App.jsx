@@ -25,7 +25,7 @@ function App(){
     <>
       <h1>Value:{value}</h1>
       <button onClick={()=>setValue(value+1)}>Increment</button>
-      {isVisible ==true ? <TestComp />:<></>}
+      {isVisible ==true ? <TestComp /> :<></>}
       <button onClick={()=>setVisible(!isVisible)}>Toggle</button>
     </>
   )
