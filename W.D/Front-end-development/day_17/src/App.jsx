@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import TestComp from './components/Testcomp'
@@ -17,18 +17,29 @@ function App(){
   //     console.log('Value changed',value);
   //   },[value])
 
-  const [value,setValue]=useState(0);
-  const [isVisible,setVisible]=useState(true);
+  // const [value,setValue]=useState(0);
+  // const [isVisible,setVisible]=useState(true);
 
+  console.log(useRef(0));
+  const ref1 = useRef();
 
   return (
     <>
-      <h1>Value:{value}</h1>
-      <button onClick={()=>setValue(value+1)}>Increment</button>
-      {isVisible ==true ? <TestComp /> :<></>}
-      <button onClick={()=>setVisible(!isVisible)}>Toggle</button>
+      <h1>Value:{ref1.current}</h1>
+      <input type="text" ref={ref1} />
+      {/* <button onClick={()=>ref1.current++}>Increment</button> */}
     </>
   )
+
+
+  // return (
+  //   <>
+  //     <h1>Value:{value}</h1>
+  //     <button onClick={()=>setValue(value+1)}>Increment</button>
+  //     {isVisible ==true ? <TestComp /> :<></>}
+  //     <button onClick={()=>setVisible(!isVisible)}>Toggle</button>
+  //   </>
+  // )
 }
 
 export default App
