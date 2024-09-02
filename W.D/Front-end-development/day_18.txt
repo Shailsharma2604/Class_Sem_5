@@ -1,0 +1,15 @@
+context API 
+
+
+context API consists of 3 elements
+1. Provider
+2. Consumer
+3. createContext
+
+Provider: It is a component that provides the data to the child components. It is used to wrap the parent component.
+Consumer: It is a component that consumes the data provided by the Provider. It is used to wrap the child component.
+createContext: It is a function that creates a context object. It takes a default value as an argument.
+
+context:
+It creates a central store for the data that can be accessed by any component in the component tree without passing props down manually at every level.
+
