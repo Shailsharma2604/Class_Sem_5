@@ -1,6 +1,7 @@
 import {Router} from "express"
-import UserModel from "../models/User"
+import UserModel from "../models/User.js"
 const router = Router()
+const JWT_SECRET_USES="gshjdkfhhdfvcdhjsgj"
 
 
 router.post("/register",(req,res)=>{
